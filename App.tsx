@@ -8,11 +8,11 @@ import CollabSection from './components/sections/CollabSection';
 import ProgramSection from './components/sections/ProgramSection';
 import BenefitSection from './components/sections/BenefitSection';
 import ReviewSection from './components/sections/ReviewSection';
-import SurvivorsApplyPage from './components/pages/SurvivorsApplyPage.tsx';
-import AimingPage from './components/pages/AimingPage.tsx';
-import ReboundPage from './components/pages/ReboundPage.tsx';
-import ParticipantsPage from './components/pages/ParticipantsPage.tsx';
-import { PageView } from './types.ts';
+import SurvivorsApplyPage from './components/pages/SurvivorsApplyPage';
+import AimingPage from './components/pages/AimingPage';
+import ReboundPage from './components/pages/ReboundPage';
+import ParticipantsPage from './components/pages/ParticipantsPage';
+import { PageView } from './types';
 
 const AppContent: React.FC = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
