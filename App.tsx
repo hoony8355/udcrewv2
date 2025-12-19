@@ -12,6 +12,7 @@ import SurvivorsApplyPage from './components/pages/SurvivorsApplyPage';
 import AimingPage from './components/pages/AimingPage';
 import ReboundPage from './components/pages/ReboundPage';
 import ParticipantsPage from './components/pages/ParticipantsPage';
+import HouseJejuPage from './components/pages/HouseJejuPage';
 import { PageView } from './types';
 
 const AppContent: React.FC = () => {
@@ -55,6 +56,10 @@ const AppContent: React.FC = () => {
 
           {currentPage === 'participants_list' && (
             <ParticipantsPage onNavigate={handleNavigate} />
+          )}
+
+          {currentPage === 'house_jeju_detail' && (
+            <HouseJejuPage onNavigate={handleNavigate} />
           )}
         </>
       )}

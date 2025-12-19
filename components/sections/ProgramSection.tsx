@@ -1,9 +1,26 @@
+
 import React, { useState } from 'react';
 import { Program, NavigationProps } from '../../types';
 import Modal from '../ui/Modal';
 import { useLanguage } from '../../contexts/LanguageContext';
 
 const PROGRAMS_KO: Program[] = [
+  {
+    title: "Underdogs House Jeju",
+    subtitle: "Global Founder Residency (Work + Residency Hybrid)",
+    purpose: "“글로벌 진출, 혼자 고민하지 말고 함께 살아보며 검증하세요.”",
+    method: "3주간의 제주 공동생활 + 3개국(KR/JP/IN) 창업가 상호 검증 + 글로벌 VC 밋업",
+    effects: ["구체화된 해외 진출 전략 수립", "실질적인 해외 창업가 네트워크 확보", "글로벌 시장 리얼리티 피드백"],
+    details: {
+      coreValue: "창업가가 사업을 멈추지 않은 채, 함께 살며 해외 진출을 공동 검증하는 글로벌 레지던시입니다.",
+      structure: [
+        { title: "Week 1. Arrival & Sharing", items: ["제주 도착 및 오리엔테이션", "사업 공유 세션 (설득이 아닌 공유 중심)"] },
+        { title: "Week 2. Cross-border TF", items: ["국가 교차 팀 구성을 통한 상호 피드백", "현지 시선 기반의 리얼리티 검증"] },
+        { title: "Week 3. Connection", items: ["글로벌 VC 밋업 및 네트워킹", "조건부 진출 전략 최종 도출"] }
+      ],
+      marketingPoint: { label: "레지던시 하우스 미리보기", url: "https://housejeju.vercel.app/" }
+    }
+  },
   {
     title: "Underdogs Survivors",
     subtitle: "창업 생존율을 높이기 위한 문제 기반 코호트",
@@ -54,6 +71,22 @@ const PROGRAMS_KO: Program[] = [
 
 const PROGRAMS_EN: Program[] = [
   {
+    title: "Underdogs House Jeju",
+    subtitle: "Global Founder Residency (Work + Residency Hybrid)",
+    purpose: "“Don't struggle with global expansion alone—live and verify together.”",
+    method: "3-week co-living in Jeju + Peer verification (KR/JP/IN) + Global VC Meetup",
+    effects: ["Formulating concrete global expansion strategies", "Securing a practical overseas founder network", "Reality feedback from global markets"],
+    details: {
+      coreValue: "A global residency where founders live together and verify global expansion without stopping their business.",
+      structure: [
+        { title: "Week 1. Arrival & Sharing", items: ["Arrival and Orientation", "Business Sharing Session (Focus on sharing, not pitching)"] },
+        { title: "Week 2. Cross-border TF", items: ["Mutual feedback through cross-border team formation", "Reality verification based on local perspectives"] },
+        { title: "Week 3. Connection", items: ["Global VC Meetup and Networking", "Final derivation of conditional expansion strategies"] }
+      ],
+      marketingPoint: { label: "Preview Residency House", url: "https://housejeju.vercel.app/" }
+    }
+  },
+  {
     title: "Underdogs Survivors",
     subtitle: "Problem-based Cohort to Increase Survival Rate",
     purpose: "“Meet running mates with similar concerns.”",
@@ -103,6 +136,22 @@ const PROGRAMS_EN: Program[] = [
 
 const PROGRAMS_JP: Program[] = [
   {
+    title: "Underdogs House Jeju",
+    subtitle: "Global Founder Residency (Work + Residency Hybrid)",
+    purpose: "「グローバル進出、一人で悩まず共に暮らしながら検証してください。」",
+    method: "3週間の済州共同生活 + 3カ国(KR/JP/IN)創業者相互検証 + グローバルVCミートアップ",
+    effects: ["具体化された海外進出戦略の樹立", "実質的な海外創業者ネットワークの確保", "グローバル市場のリアリティフィードバック"],
+    details: {
+      coreValue: "創業者が事業を止めずに、共に暮らしながら海外進出を共同検証するグローバルレジデンシーです。",
+      structure: [
+        { title: "Week 1. Arrival & Sharing", items: ["済州到着およびオリエンテーション", "事業共有セッション（説得ではなく共有中心）"] },
+        { title: "Week 2. Cross-border TF", items: ["国をまたいだチーム構成による相互フィードバック", "現地の視点に基づいたリアリティ検証"] },
+        { title: "Week 3. Connection", items: ["グローバルVCミートアップおよびネットワーキング", "条件付き進出戦略の最終導出"] }
+      ],
+      marketingPoint: { label: "レジデンシーハウスの下見", url: "https://housejeju.vercel.app/" }
+    }
+  },
+  {
     title: "Underdogs Survivors",
     subtitle: "創業生存率を高めるための課題ベースのコホート",
     purpose: "「同じ悩みを持つランニングメイトに出会いましょう。」",
@@ -123,7 +172,7 @@ const PROGRAMS_JP: Program[] = [
     subtitle: "失敗後の回復と再設計",
     purpose: "失敗は終止符ではなく、より強固な次の文章の始まりです。",
     method: "済州ポップアップキャンパスでの没入型回顧と再創業シミュレーション",
-    effects: ["起業家の回復弾力性(レジリエンス)強化", "失敗経験の資産化", "再挑戦シナリオの完成"],
+    effects: ["起業家の回復弾力性(レジリエンス)強化", "失敗経験의 資産化", "再挑戦シナリオの完成"],
     details: {
       coreValue: "私たちは失敗を愛しています。一度転んだ人だけが持てる強さを信じているからです。",
       structure: [
@@ -151,6 +200,22 @@ const PROGRAMS_JP: Program[] = [
 ];
 
 const PROGRAMS_IN: Program[] = [
+  {
+    title: "Underdogs House Jeju",
+    subtitle: "Global Founder Residency (Work + Residency Hybrid)",
+    purpose: "“Don't struggle with global expansion alone—live and verify together.”",
+    method: "3-week co-living in Jeju + Peer verification (KR/JP/IN) + Global VC Meetup",
+    effects: ["Formulating concrete global expansion strategies", "Securing a practical overseas founder network", "Reality feedback from global markets"],
+    details: {
+      coreValue: "A global residency where founders live together and verify global expansion without stopping their business.",
+      structure: [
+        { title: "Week 1. Arrival & Sharing", items: ["Arrival and Orientation", "Business Sharing Session (Focus on sharing, not pitching)"] },
+        { title: "Week 2. Cross-border TF", items: ["Mutual feedback through cross-border team formation", "Reality verification based on local perspectives"] },
+        { title: "Week 3. Connection", items: ["Global VC Meetup and Networking", "Final derivation of conditional expansion strategies"] }
+      ],
+      marketingPoint: { label: "Preview Residency House", url: "https://housejeju.vercel.app/" }
+    }
+  },
   {
     title: "Underdogs Survivors",
     subtitle: "Kohort Berbasis Masalah untuk Meningkatkan Tingkat Kelangsungan Hidup",
@@ -218,7 +283,9 @@ const ProgramSection: React.FC<NavigationProps> = ({ onNavigate }) => {
   };
 
   const handleApply = (program: Program) => {
-    if (program.title === "Underdogs Survivors") {
+    if (program.title === "Underdogs House Jeju") {
+        onNavigate('house_jeju_detail');
+    } else if (program.title === "Underdogs Survivors") {
         onNavigate('survivors_apply');
     } else if (program.title === "Underdogs 'A'ming") {
         onNavigate('aiming_detail');

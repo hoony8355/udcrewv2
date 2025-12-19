@@ -46,7 +46,7 @@ export interface ReviewCase {
   image: string;
 }
 
-export type PageView = 'home' | 'survivors_apply' | 'aiming_detail' | 'rebound_detail' | 'participants_list';
+export type PageView = 'home' | 'survivors_apply' | 'aiming_detail' | 'rebound_detail' | 'participants_list' | 'house_jeju_detail';
 
 export interface NavigationProps {
   onNavigate: (page: PageView) => void;
